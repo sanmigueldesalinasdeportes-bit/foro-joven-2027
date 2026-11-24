@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FFD60A">
+<title>Foro Joven 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Rubik:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+@layer properties;@layer theme{:root, :host{--font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial,
+sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';--font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+monospace;--spacing: 0.25rem;--text-lg: 1.125rem;--text-lg--line-height: calc(1.75 / 1.125);--text-2xl: 1.5rem;--text-2xl--line-height: calc(2 / 1.5);--text-4xl: 2.25rem;--text-4xl--line-height: calc(2.5 / 2.25);--text-5xl: 3rem;--text-5xl--line-height: 1;--font-weight-medium: 500;--font-weight-bold: 700;--font-weight-extrabold: 800;--leading-tight: 1.25;--leading-snug: 1.375;--radius-lg: 0.5rem;--radius-xl: 0.75rem;--radius-2xl: 1rem;--default-font-family: var(--font-sans);--default-mono-font-family: var(--font-mono);}}@layer base{*, ::after, ::before, ::backdrop, ::file-selector-button{box-sizing: border-box;margin: 0;padding: 0;border: 0 solid;}html, :host{line-height: 1.5;-webkit-text-size-adjust: 100%;tab-size: 4;font-family: var(--default-font-family, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji');font-feature-settings: var(--default-font-feature-settings, normal);font-variation-settings: var(--default-font-variation-settings, normal);-webkit-tap-highlight-color: transparent;}hr{height: 0;color: inherit;border-top-width: 1px;}abbr:where([title]){-webkit-text-decoration: underline dotted;text-decoration: underline dotted;}h1, h2, h3, h4, h5, h6{font-size: inherit;font-weight: inherit;}a{color: inherit;-webkit-text-decoration: inherit;text-decoration: inherit;}b, strong{font-weight: bolder;}code, kbd, samp, pre{font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace);font-feature-settings: var(--default-mono-font-feature-settings, normal);font-variation-settings: var(--default-mono-font-variation-settings, normal);font-size: 1em;}small{font-size: 80%;}sub, sup{font-size: 75%;line-height: 0;position: relative;vertical-align: baseline;}sub{bottom: -0.25em;}sup{top: -0.5em;}table{text-indent: 0;border-color: inherit;border-collapse: collapse;}:-moz-focusring:where(:not(iframe)){outline: auto;}progress{vertical-align: baseline;}summary{display: list-item;}ol, ul, menu{list-style: none;}img, svg, video, canvas, audio, iframe, embed, object{display: block;vertical-align: middle;}img, video{max-width: 100%;height: auto;}button, input, select, optgroup, textarea, ::file-selector-button{font: inherit;font-feature-settings: inherit;font-variation-settings: inherit;letter-spacing: inherit;color: inherit;border-radius: 0;background-color: transparent;opacity: 1;}:where(select:is([multiple], [size])) optgroup{font-weight: bolder;}:where(select:is([multiple], [size])) optgroup option{padding-inline-start: 20px;}::file-selector-button{margin-inline-end: 4px;}::placeholder{opacity: 1;}@supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px){::placeholder{color: currentcolor;@supports (color: color-mix(in lab, red, red)){color: color-mix(in oklab, currentcolor 50%, transparent);}}}textarea{resize: vertical;}::-webkit-search-decoration{-webkit-appearance: none;}::-webkit-date-and-time-value{min-height: 1lh;text-align: inherit;}::-webkit-datetime-edit{display: inline-flex;}::-webkit-datetime-edit-fields-wrapper{padding: 0;}::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field{padding-block: 0;}::-webkit-calendar-picker-indicator{line-height: 1;}:-moz-ui-invalid{box-shadow: none;}button, input:where([type='button'], [type='reset'], [type='submit']), ::file-selector-button{appearance: button;}::-webkit-inner-spin-button, ::-webkit-outer-spin-button{height: auto;}[hidden]:where(:not([hidden='until-found'])){display: none !important;}}@layer utilities{.absolute{position: absolute;}.fixed{position: fixed;}.relative{position: relative;}.-top-2{top: calc(var(--spacing) * -2);}.top-1\/2{top: calc(1 / 2 * 100%);}.top-3{top: calc(var(--spacing) * 3);}.-right-3{right: calc(var(--spacing) * -3);}.right-3{right: calc(var(--spacing) * 3);}.bottom-24{bottom: calc(var(--spacing) * 24);}.left-1\/2{left: calc(1 / 2 * 100%);}.left-3{left: calc(var(--spacing) * 3);}.z-\[70\]{z-index: 70;}.mx-auto{margin-inline: auto;}.-mt-2{margin-top: calc(var(--spacing) * -2);}.-mt-3{margin-top: calc(var(--spacing) * -3);}.mt-0\.5{margin-top: calc(var(--spacing) * 0.5);}.mt-1{margin-top: var(--spacing);}.mt-1\.5{margin-top: calc(var(--spacing) * 1.5);}.mt-2{margin-top: calc(var(--spacing) * 2);}.mt-3{margin-top: calc(var(--spacing) * 3);}.mt-4{margin-top: calc(var(--spacing) * 4);}.mt-5{margin-top: calc(var(--spacing) * 5);}.mt-10{margin-top: calc(var(--spacing) * 10);}.mb-1{margin-bottom: var(--spacing);}.mb-3{margin-bottom: calc(var(--spacing) * 3);}.mb-4{margin-bottom: calc(var(--spacing) * 4);}.block{display: block;}.flex{display: flex;}.grid{display: grid;}.inline-block{display: inline-block;}.inline-flex{display: inline-flex;}.h-10{height: calc(var(--spacing) * 10);}.h-11{height: calc(var(--spacing) * 11);}.h-12{height: calc(var(--spacing) * 12);}.h-14{height: calc(var(--spacing) * 14);}.h-16{height: calc(var(--spacing) * 16);}.h-auto{height: auto;}.min-h-\[74px\]{min-height: 74px;}.min-h-screen{min-height: 100vh;}.w-8{width: calc(var(--spacing) * 8);}.w-10{width: calc(var(--spacing) * 10);}.w-11{width: calc(var(--spacing) * 11);}.w-12{width: calc(var(--spacing) * 12);}.w-14{width: calc(var(--spacing) * 14);}.w-16{width: calc(var(--spacing) * 16);}.w-40{width: calc(var(--spacing) * 40);}.w-\[min\(92vw\,460px\)\]{width: min(92vw, 460px);}.w-full{width: 100%;}.max-w-\[36ch\]{max-width: 36ch;}.max-w-\[44ch\]{max-width: 44ch;}.max-w-\[60ch\]{max-width: 60ch;}.max-w-\[380px\]{max-width: 380px;}.max-w-\[420px\]{max-width: 420px;}.max-w-\[560px\]{max-width: 560px;}.max-w-\[720px\]{max-width: 720px;}.max-w-\[1040px\]{max-width: 1040px;}.flex-1{flex: 1;}.shrink-0{flex-shrink: 0;}.-translate-x-1\/2{--tw-translate-x: calc(calc(1 / 2 * 100%) * -1);translate: var(--tw-translate-x) var(--tw-translate-y);}.-translate-y-1\/2{--tw-translate-y: calc(calc(1 / 2 * 100%) * -1);translate: var(--tw-translate-x) var(--tw-translate-y);}.list-decimal{list-style-type: decimal;}.grid-cols-2{grid-template-columns: repeat(2, minmax(0, 1fr));}.grid-cols-3{grid-template-columns: repeat(3, minmax(0, 1fr));}.grid-cols-\[minmax\(0\,9\.5em\)_1fr_2\.5em\]{grid-template-columns: minmax(0,9.5em) 1fr 2.5em;}.flex-col{flex-direction: column;}.flex-wrap{flex-wrap: wrap;}.place-items-center{place-items: center;}.items-center{align-items: center;}.items-end{align-items: flex-end;}.items-start{align-items: flex-start;}.items-stretch{align-items: stretch;}.justify-between{justify-content: space-between;}.justify-center{justify-content: center;}.gap-1{gap: var(--spacing);}.gap-1\.5{gap: calc(var(--spacing) * 1.5);}.gap-2{gap: calc(var(--spacing) * 2);}.gap-3{gap: calc(var(--spacing) * 3);}.gap-4{gap: calc(var(--spacing) * 4);}.gap-5{gap: calc(var(--spacing) * 5);}.gap-6{gap: calc(var(--spacing) * 6);}.truncate{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}.overflow-x-auto{overflow-x: auto;}.rounded-2xl{border-radius: var(--radius-2xl);}.rounded-full{border-radius: calc(infinity * 1px);}.rounded-lg{border-radius: var(--radius-lg);}.rounded-xl{border-radius: var(--radius-xl);}.p-1\.5{padding: calc(var(--spacing) * 1.5);}.p-3{padding: calc(var(--spacing) * 3);}.p-4{padding: calc(var(--spacing) * 4);}.p-5{padding: calc(var(--spacing) * 5);}.p-6{padding: calc(var(--spacing) * 6);}.px-1\.5{padding-inline: calc(var(--spacing) * 1.5);}.px-2{padding-inline: calc(var(--spacing) * 2);}.px-2\.5{padding-inline: calc(var(--spacing) * 2.5);}.px-3{padding-inline: calc(var(--spacing) * 3);}.px-4{padding-inline: calc(var(--spacing) * 4);}.px-5{padding-inline: calc(var(--spacing) * 5);}.py-0\.5{padding-block: calc(var(--spacing) * 0.5);}.py-1{padding-block: var(--spacing);}.py-3{padding-block: calc(var(--spacing) * 3);}.pt-5{padding-top: calc(var(--spacing) * 5);}.pt-6{padding-top: calc(var(--spacing) * 6);}.pb-1{padding-bottom: var(--spacing);}.pb-6{padding-bottom: calc(var(--spacing) * 6);}.pb-28{padding-bottom: calc(var(--spacing) * 28);}.pl-5{padding-left: calc(var(--spacing) * 5);}.text-center{text-align: center;}.text-left{text-align: left;}.text-right{text-align: right;}.align-middle{vertical-align: middle;}.text-2xl{font-size: var(--text-2xl);line-height: var(--tw-leading, var(--text-2xl--line-height));}.text-4xl{font-size: var(--text-4xl);line-height: var(--tw-leading, var(--text-4xl--line-height));}.text-5xl{font-size: var(--text-5xl);line-height: var(--tw-leading, var(--text-5xl--line-height));}.text-lg{font-size: var(--text-lg);line-height: var(--tw-leading, var(--text-lg--line-height));}.text-\[11px\]{font-size: 11px;}.text-\[12px\]{font-size: 12px;}.text-\[13px\]{font-size: 13px;}.text-\[14px\]{font-size: 14px;}.text-\[15px\]{font-size: 15px;}.text-\[16px\]{font-size: 16px;}.text-\[17px\]{font-size: 17px;}.text-\[18px\]{font-size: 18px;}.text-\[20px\]{font-size: 20px;}.text-\[22px\]{font-size: 22px;}.text-\[24px\]{font-size: 24px;}.text-\[26px\]{font-size: 26px;}.text-\[30px\]{font-size: 30px;}.text-\[44px\]{font-size: 44px;}.leading-\[1\.05\]{--tw-leading: 1.05;line-height: 1.05;}.leading-none{--tw-leading: 1;line-height: 1;}.leading-snug{--tw-leading: var(--leading-snug);line-height: var(--leading-snug);}.leading-tight{--tw-leading: var(--leading-tight);line-height: var(--leading-tight);}.font-bold{--tw-font-weight: var(--font-weight-bold);font-weight: var(--font-weight-bold);}.font-extrabold{--tw-font-weight: var(--font-weight-extrabold);font-weight: var(--font-weight-extrabold);}.font-medium{--tw-font-weight: var(--font-weight-medium);font-weight: var(--font-weight-medium);}.break-all{word-break: break-all;}.underline{text-decoration-line: underline;}.opacity-80{opacity: 80%;}@media (width >= 40rem){.sm\:mx-0{margin-inline: 0px;}.sm\:w-auto{width: auto;}.sm\:grid-cols-2{grid-template-columns: repeat(2, minmax(0, 1fr));}.sm\:grid-cols-3{grid-template-columns: repeat(3, minmax(0, 1fr));}.sm\:grid-cols-\[1\.15fr_1fr\]{grid-template-columns: 1.15fr 1fr;}.sm\:grid-cols-\[1fr_auto\]{grid-template-columns: 1fr auto;}.sm\:items-center{align-items: center;}.sm\:p-4{padding: calc(var(--spacing) * 4);}.sm\:p-5{padding: calc(var(--spacing) * 5);}.sm\:pt-8{padding-top: calc(var(--spacing) * 8);}.sm\:pb-9{padding-bottom: calc(var(--spacing) * 9);}.sm\:text-\[34px\]{font-size: 34px;}}}@property --tw-translate-x{syntax: "*";inherits: false;initial-value: 0;}@property --tw-translate-y{syntax: "*";inherits: false;initial-value: 0;}@property --tw-translate-z{syntax: "*";inherits: false;initial-value: 0;}@property --tw-leading{syntax: "*";inherits: false;}@property --tw-font-weight{syntax: "*";inherits: false;}@layer properties{@supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))){*, ::before, ::after, ::backdrop{--tw-translate-x: 0;--tw-translate-y: 0;--tw-translate-z: 0;--tw-leading: initial;--tw-font-weight: initial;}}}</style>
+<style>
+/* VOICE: festival juvenil, arcade de karts, directo y con energía
+   IDEA: un pase de boxes / ticket de carrera que se va llenando con cada idea
+   PICTURE: kart dibujado a mano con bandera a cuadros y líneas de velocidad
+   COLOUR and TYPE: amarillo pista dominante, negro neumático, rojo bólido de acento; Bungee + Rubik
+   LAYOUT: columna móvil con barra inferior tipo app; panel de organización a dos columnas en escritorio */
+:root{color-scheme:light dark;
+  --bg:light-dark(#F6F3EA,#121018);--card:light-dark(#FFFFFF,#1D1A27);--ink:light-dark(#111111,#F6F3EA);
+  --line:light-dark(#111111,#F6F3EA);--muted:light-dark(#55524A,#B9B4C6);--soft:light-dark(#EFEBDF,#272335);
+  --yellow:#FFD60A;--red:#FF2D55;--blue:#2F6BFF;--hero:light-dark(#FFD60A,#1D1A27);--heroInk:light-dark(#111111,#FFD60A)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0;-webkit-tap-highlight-color:transparent}
+html{scroll-padding-top:16px;scroll-padding-bottom:96px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Rubik,system-ui,sans-serif;overflow-x:clip}
+.font-display{font-family:Bungee,Impact,sans-serif;letter-spacing:0}
+.nb{background:var(--card);border:3px solid var(--line);border-radius:18px;box-shadow:5px 5px 0 var(--line)}
+.nb-sm{border:2.5px solid var(--line);border-radius:12px;box-shadow:3px 3px 0 var(--line)}
+.muted{color:var(--muted)}
+.soft{background:var(--soft)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:.7rem 1.1rem;border:3px solid var(--line);border-radius:14px;box-shadow:4px 4px 0 var(--line);font-weight:800;color:#111;background:var(--yellow);cursor:pointer;transition:transform .12s ease,box-shadow .12s ease,filter .2s;user-select:none;-webkit-user-select:none;touch-action:manipulation}
+.btn:active:not(:disabled){transform:translate(3px,3px);box-shadow:1px 1px 0 var(--line)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn:focus-visible,.inp:focus-visible,.chip:focus-visible,.tile:focus-visible,.navb:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.btn-red{background:var(--red);color:#fff}.btn-blue{background:var(--blue);color:#fff}.btn-ghost{background:var(--card);color:var(--ink)}.btn-ink{background:var(--ink);color:var(--bg)}
+.btn-xl{min-height:62px;font-size:1.05rem;width:100%}
+.inp{width:100%;font:inherit;font-size:16px;color:var(--ink);background:var(--card);border:3px solid var(--line);border-radius:14px;padding:.8rem .95rem;min-height:52px;transition:box-shadow .15s}
+.inp:focus{box-shadow:4px 4px 0 var(--blue);outline:none}
+.inp::placeholder{color:var(--muted);opacity:.8}
+.lbl{display:flex;align-items:center;gap:.4rem;font-weight:800;font-size:.95rem;margin-bottom:.4rem}
+.chip{display:inline-flex;align-items:center;gap:.35rem;min-height:40px;padding:.35rem .8rem;border:2.5px solid var(--line);border-radius:999px;font-weight:700;font-size:.9rem;background:var(--card);color:var(--ink);cursor:pointer}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+.tile{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:.55rem;padding:.85rem;min-height:96px;border:3px solid var(--line);border-radius:16px;box-shadow:4px 4px 0 var(--line);color:#111;cursor:pointer;text-align:left;transition:transform .15s ease,box-shadow .15s ease}
+.tile:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--line)}
+.tile[aria-checked=true]{transform:translate(-2px,-2px) rotate(-1.5deg);box-shadow:7px 7px 0 var(--line)}
+.tile .ic{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:#fff;border:2.5px solid #111}
+.check{position:absolute;top:8px;right:8px;width:26px;height:26px;border-radius:999px;background:#111;color:#fff;display:grid;place-items:center;transform:scale(0);transition:transform .25s cubic-bezier(.3,1.6,.5,1)}
+.tile[aria-checked=true] .check{transform:scale(1)}
+.hero{background:var(--hero);color:var(--heroInk);border-bottom:3px solid var(--line)}
+.checker{height:18px;background:conic-gradient(#111 25%,#fff 0 50%,#111 0 75%,#fff 0) 0 0/18px 18px;border-bottom:3px solid #111}
+.ticket{position:relative;background:#111;color:#FFD60A;border:3px solid var(--line);border-radius:18px;box-shadow:5px 5px 0 var(--red);
+  -webkit-mask:radial-gradient(circle 12px at 0 50%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 12px at 100% 50%,#0000 98%,#000) right/51% 100% no-repeat;
+  mask:radial-gradient(circle 12px at 0 50%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 12px at 100% 50%,#0000 98%,#000) right/51% 100% no-repeat}
+.ticket .perf{border-left:3px dashed #FFD60A55;align-self:stretch}
+.bump{animation:bump .6s cubic-bezier(.3,1.7,.5,1)}
+@keyframes bump{0%{transform:scale(.4)}100%{transform:scale(1)}}
+.view-in{animation:viewin .35s cubic-bezier(.2,.8,.2,1)}
+@keyframes viewin{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.pop{animation:pop .45s cubic-bezier(.3,1.5,.5,1)}
+@keyframes pop{from{opacity:0;transform:scale(.7) rotate(-4deg)}to{opacity:1;transform:none}}
+.kart{animation:drive 2.6s ease-in-out infinite}
+@keyframes drive{0%,100%{transform:translateX(0)}50%{transform:translateX(10px)}}
+.wheel{transform-box:fill-box;transform-origin:center;animation:spin .5s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.speed{animation:speed 1s linear infinite}
+@keyframes speed{from{stroke-dashoffset:0}to{stroke-dashoffset:60}}
+.roll{animation:roll .09s linear infinite}
+@keyframes roll{0%{transform:translateY(-3px)}100%{transform:translateY(3px)}}
+.nav{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:8px max(10px,env(safe-area-inset-left)) calc(8px + env(safe-area-inset-bottom));background:var(--card);border-top:3px solid var(--line)}
+.navb{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 4px;min-height:54px;border-radius:12px;font-weight:700;font-size:.74rem;color:var(--muted);border:2.5px solid transparent;background:none;cursor:pointer}
+.navb[aria-current=page]{color:#111;background:var(--yellow);border-color:var(--line)}
+.overlay{position:fixed;inset:0;z-index:50;background:#111c;display:grid;place-items:center;padding:16px}
+.bar{height:14px;border:2.5px solid var(--line);border-radius:999px;overflow:hidden;background:var(--soft)}
+.bar>i{display:block;height:100%;border-right:2.5px solid var(--line)}
+.slot-empty{border:3px dashed var(--muted);border-radius:16px;opacity:.7}
+.clamp2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.nowrap{white-space:nowrap}
+@media (hover:hover){.btn:hover:not(:disabled){filter:brightness(1.06)}.tile:hover{transform:translate(-1px,-1px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="root"><div style="display:grid;place-items:center;min-height:100vh;font:700 18px Rubik,sans-serif">Arrancando motores…</div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/htm@3.1.1/dist/htm.umd.js"></script>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script>
+{
+const {useState,useEffect,useRef,useMemo,useCallback}=React;
+const h=React.createElement;
+const html=htm.bind(h);
+
+/* ---------- utilidades ---------- */
+const LS={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+const rid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,7);
+const rnd=n=>{try{const a=new Uint32Array(1);crypto.getRandomValues(a);return a[0]%n}catch(e){return Math.floor(Math.random()*n)}};
+const reduced=()=>{try{return matchMedia('(prefers-reduced-motion: reduce)').matches}catch(e){return false}};
+const fmt=ts=>{try{return new Date(ts).toLocaleString('es-ES',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}catch(e){return ''}};
+const MAX_IDEAS=30, TOTAL=9;
+
+const CATS=[
+  {id:'talleres',label:'Talleres',icon:'Wrench',color:'#FF8A1F',emoji:'🛠️',ej:'Taller de DJ, de cómic, de cocina…'},
+  {id:'excursiones',label:'Excursiones',icon:'Mountain',color:'#3DDC84',emoji:'🥾',ej:'Ruta por la sierra, barranquismo…'},
+  {id:'viajes',label:'Viajes',icon:'Plane',color:'#5B8CFF',emoji:'✈️',ej:'Finde en PortAventura, Madrid…'},
+  {id:'charlas',label:'Charlas',icon:'Mic',color:'#FF5C93',emoji:'🎤',ej:'Creadores de contenido, salud mental…'},
+  {id:'ocio',label:'Actividades / Ocio',icon:'PartyPopper',color:'#FFD60A',emoji:'🎉',ej:'Torneo de videojuegos, cine de verano…'},
+  {id:'otros',label:'Otros',icon:'Sparkles',color:'#2DD4BF',emoji:'✨',ej:'Lo que se te ocurra para 2027'}
+];
+const CAT=Object.fromEntries(CATS.map(c=>[c.id,c]));
+
+function Icon({name,size=22,stroke=2.5,className=''}){
+  const L=window.lucide;const node=L&&L.icons&&L.icons[name];
+  if(!node) return null;
+  const kids=node[0]==='svg'?node[2]:node;
+  const camel=a=>Object.fromEntries(Object.entries(a||{}).map(([k,v])=>[k.replace(/-([a-z])/g,(_,c)=>c.toUpperCase()),v]));
+  return h('svg',{xmlns:'http://www.w3.org/2000/svg',width:size,height:size,viewBox:'0 0 24 24',fill:'none',stroke:'currentColor',strokeWidth:stroke,strokeLinecap:'round',strokeLinejoin:'round',className,'aria-hidden':true},(kids||[]).map((k,i)=>h(k[0],{key:i,...camel(k[1])})));
+}
+
+/* ---------- capa de datos: API de Netlify (funciones + Netlify Blobs) ---------- */
+const TOKEN=(()=>{let t=LS.get('fj27-token',null);if(!t||t.length<20){try{const a=new Uint8Array(16);crypto.getRandomValues(a);t=[...a].map(x=>x.toString(16).padStart(2,'0')).join('')}catch(e){t=rid()+rid()+rid()}LS.set('fj27-token',t)}return t})();
+let PIN=(()=>{try{return sessionStorage.getItem('fj27-pin')||''}catch(e){return ''}})();
+async function api(path,body){
+  let r;
+  try{r=await fetch('/api/'+path,{method:body?'POST':'GET',cache:'no-store',headers:{'content-type':'application/json','x-token':TOKEN,...(PIN?{'x-admin-pin':PIN}:{})},body:body?JSON.stringify(body):undefined})}
+  catch(e){const er=new Error('red');er.code='red';throw er}
+  const d=await r.json().catch(()=>({}));
+  if(!r.ok){const er=new Error(d.error||'http');er.code=d.error||'http';throw er}
+  return d;
+}
+function poller(fn,ms,cb,err){let alive=true,t;const run=async()=>{if(!alive)return;if(document.visibilityState!=='hidden'){try{const d=await fn();if(alive)cb(d)}catch(e){if(alive&&err)err(e)}}if(alive)t=setTimeout(run,ms)};run();return()=>{alive=false;clearTimeout(t)}}
+async function initBackend(){
+  const estSubs=new Set();let lastEstado={};
+  const be={mode:'api',uid:null,isAdmin:false,canWrite:true,
+    watchMine:(cb,err)=>{let alive=true;api('me').then(d=>{be.uid=d.uid;alive&&cb(d.mine||null)}).catch(e=>{alive&&err&&err(e)});return()=>{alive=false}},
+    addIdea:f=>api('idea',f),
+    watchEstado:cb=>{const f=d=>{lastEstado=d;cb(d)};estSubs.add(f);const stop=poller(()=>api('estado'),20000,f);return()=>{estSubs.delete(f);stop()}},
+    pushEstado:d=>{lastEstado=d;estSubs.forEach(f=>f(d))},
+    watchAdmin:(cb,err)=>poller(()=>api('admin/all'),8000,cb,err),
+    saveBorrador:d=>api('admin/borrador',d),
+    saveEstado:async d=>{const e=await api('admin/estado',d);be.pushEstado(e);return e},
+    deleteIdea:(uid,ideaId)=>api('admin/delete-idea',{uid,ideaId}),
+    login:async pin=>{PIN=pin;try{await api('admin/login',{});try{sessionStorage.setItem('fj27-pin',pin)}catch(e){}be.isAdmin=true;return true}catch(e){PIN='';try{sessionStorage.removeItem('fj27-pin')}catch(x){}return e.code==='pin'?false:e}},
+    logout:()=>{PIN='';be.isAdmin=false;try{sessionStorage.removeItem('fj27-pin')}catch(e){}}
+  };
+  try{await api('estado')}catch(e){be.mode='off';be.canWrite=false}
+  if(PIN&&be.mode!=='off'){const ok=await be.login(PIN);if(ok!==true)be.logout()}
+  return be;
+}
+const errMsg=e=>({
+  cerrado:'El plazo para enviar propuestas está cerrado.',
+  dup:'Ya enviaste esta idea. ¡Prueba con otra diferente!',
+  max:'Has llegado al máximo de '+MAX_IDEAS+' ideas.',
+  datos:'Revisa los datos del formulario.',
+  lento:'Vas muy rápido: espera unos segundos y vuelve a intentarlo.',
+  pin:'PIN incorrecto o sesión caducada. Vuelve a entrar.',
+  nopin:'Falta configurar la variable ADMIN_PIN en Netlify.',
+  red:'Sin conexión con el servidor. Revisa tu conexión y vuelve a intentarlo.'
+})[e&&e.code]||'No se ha podido guardar. Vuelve a intentarlo en unos segundos.';
+
+/* ---------- ilustraciones propias ---------- */
+function KartArt(){
+  return html`<svg viewBox="0 0 380 190" className="w-full h-auto" role="img" aria-label="Ilustración de un kart a toda velocidad">
+    <g fill="none" stroke="currentColor" strokeWidth="5" strokeLinecap="round" strokeDasharray="34 26" className="speed">
+      <path d="M6 78h70"/><path d="M20 104h56"/><path d="M2 130h80"/></g>
+    <g className="kart" stroke="#111" strokeWidth="4" strokeLinejoin="round" strokeLinecap="round">
+      <circle cx="92" cy="138" r="11" fill="#fff"/><circle cx="72" cy="126" r="7" fill="#fff"/><circle cx="58" cy="116" r="4" fill="#fff"/>
+      <path d="M108 70h46v13h-46z" fill="#111"/><path d="M131 83v30"/>
+      <path d="M104 116h196q34 0 46 18l-7 9H114q-16 0-10-27z" fill="#FF2D55"/>
+      <rect x="158" y="104" width="100" height="30" rx="12" fill="#FF2D55"/>
+      <circle cx="208" cy="119" r="17" fill="#fff"/>
+      <text x="208" y="127" textAnchor="middle" fontFamily="Bungee,Impact,sans-serif" fontSize="19" fill="#111" stroke="none">27</text>
+      <path d="M170 108q8-36 38-36q18 0 22 36z" fill="#2F6BFF"/>
+      <circle cx="210" cy="64" r="23" fill="#FFD60A"/>
+      <path d="M212 54h22q5 10-2 17h-20z" fill="#111"/>
+      <path d="M196 50q10-10 22-8" stroke="#fff" strokeWidth="3"/>
+      <path d="M238 92l16-8M249 79l9 12"/>
+      <path d="M312 134h40"/>
+      <g><circle cx="142" cy="146" r="27" fill="#111"/><g className="wheel"><circle cx="142" cy="146" r="10" fill="#FFD60A"/><path d="M142 136v20M132 146h20" stroke="#111" strokeWidth="3"/></g></g>
+      <g><circle cx="306" cy="149" r="22" fill="#111"/><g className="wheel"><circle cx="306" cy="149" r="8" fill="#FFD60A"/><path d="M306 141v16M298 149h16" stroke="#111" strokeWidth="3"/></g></g>
+    </g>
+    <g transform="translate(316 10)" stroke="#111" strokeWidth="3">
+      <path d="M4 4v62" strokeWidth="4" strokeLinecap="round"/>
+      <rect x="6" y="6" width="48" height="32" fill="#fff"/>
+      <path d="M6 6h12v8H6zM30 6h12v8H30zM18 14h12v8H18zM42 14h12v8H42zM6 22h12v8H6zM30 22h12v8H30zM18 30h12v8H18zM42 30h12v8H42z" fill="#111" stroke="none"/>
+    </g>
+  </svg>`;
+}
+function TrophyArt(){
+  return html`<svg viewBox="0 0 220 170" className="w-40 h-auto mx-auto" aria-hidden="true">
+    <g stroke="#111" strokeWidth="4" strokeLinejoin="round" strokeLinecap="round">
+      <rect x="20" y="132" width="180" height="24" rx="6" fill="#111"/>
+      <path d="M70 18h80v36q0 40-40 40t-40-40z" fill="#FFD60A"/>
+      <path d="M70 30H48q0 30 26 34M150 30h22q0 30-26 34" fill="none"/>
+      <path d="M100 94h20v18h-20z" fill="#FFD60A"/><rect x="78" y="112" width="64" height="20" rx="5" fill="#FF2D55"/>
+      <path d="M96 40l6 10 12 2-9 8 2 12-11-6-11 6 2-12-9-8 12-2z" fill="#fff" strokeWidth="3"/>
+      <path d="M14 40l8 4M206 40l-8 4M30 12l6 8M190 12l-6 8" />
+    </g></svg>`;
+}
+
+/* ---------- confeti ---------- */
+function Confetti({fire}){
+  const ref=useRef(null);
+  useEffect(()=>{
+    if(!fire||reduced()) return;
+    const c=ref.current;if(!c) return;const x=c.getContext('2d');
+    const W=c.width=innerWidth*devicePixelRatio,H=c.height=innerHeight*devicePixelRatio;
+    const cols=['#FFD60A','#FF2D55','#2F6BFF','#3DDC84','#FF8A1F','#ffffff'];
+    const P=Array.from({length:170},()=>({x:W/2+(Math.random()-.5)*W*.3,y:H*.55,vx:(Math.random()-.5)*26*devicePixelRatio,vy:(-Math.random()*26-10)*devicePixelRatio,s:(6+Math.random()*8)*devicePixelRatio,r:Math.random()*6,vr:(Math.random()-.5)*.4,c:cols[rnd(cols.length)],t:rnd(3)}));
+    let raf,f=0;
+    const tick=()=>{f++;x.clearRect(0,0,W,H);
+      P.forEach(p=>{p.vy+=.7*devicePixelRatio;p.vx*=.985;p.x+=p.vx;p.y+=p.vy;p.r+=p.vr;
+        x.save();x.translate(p.x,p.y);x.rotate(p.r);x.fillStyle=p.c;x.strokeStyle='#111';x.lineWidth=1.5*devicePixelRatio;
+        if(p.t===0){x.fillRect(-p.s/2,-p.s/4,p.s,p.s/2);x.strokeRect(-p.s/2,-p.s/4,p.s,p.s/2)}
+        else if(p.t===1){x.beginPath();x.arc(0,0,p.s/2.6,0,7);x.fill();x.stroke()}
+        else{x.beginPath();x.moveTo(0,-p.s/2);x.lineTo(p.s/2,p.s/2);x.lineTo(-p.s/2,p.s/2);x.closePath();x.fill();x.stroke()}
+        x.restore()});
+      if(f<200) raf=requestAnimationFrame(tick);else x.clearRect(0,0,W,H)};
+    tick();return()=>cancelAnimationFrame(raf);
+  },[fire]);
+  return html`<canvas ref=${ref} style=${{position:'fixed',inset:0,width:'100vw',height:'100vh',pointerEvents:'none',zIndex:60}} aria-hidden="true"></canvas>`;
+}
+
+/* ---------- piezas comunes ---------- */
+function TicketCounter({n,big}){
+  return html`<div className="ticket flex items-stretch" role="status" aria-live="polite">
+    <div className="flex items-center gap-3 px-5 py-3 flex-1">
+      <span className="text-2xl" aria-hidden="true">🎟️</span>
+      <div><div className="text-[13px] font-bold opacity-80" style=${{color:'#fff'}}>Tus tickets acumulados</div>
+      <div className="font-display leading-none" style=${{fontSize:big?'40px':'30px'}}><span key=${n} className="inline-block bump">${n}</span></div></div>
+    </div>
+    <div className="perf"></div>
+    <div className="grid place-items-center px-4 text-center"><div className="text-[13px] font-bold" style=${{color:'#fff'}}>Premio</div><div className="font-display text-lg leading-tight">9 entradas<br/>karts</div></div>
+  </div>`;
+}
+function CatBadge({id,small}){const c=CAT[id]||CAT.otros;
+  return html`<span className=${'inline-flex items-center gap-1 rounded-full font-bold nowrap '+(small?'text-[12px] px-2 py-0.5':'text-[13px] px-2.5 py-1')} style=${{background:c.color,color:'#111',border:'2px solid #111'}}><${Icon} name=${c.icon} size=${small?13:15}/>${c.label}</span>`}
+function Banner({tone='info',children}){
+  const bg={info:'var(--soft)',warn:'#FFE58A',err:'#FFC2CF',ok:'#C8F7DA'}[tone];
+  return html`<div className="nb-sm px-4 py-3 text-[15px] font-medium flex gap-2 items-start" style=${{background:bg,color:tone==='info'?'var(--ink)':'#111'}}><span className="mt-0.5"><${Icon} name=${tone==='ok'?'Check':tone==='info'?'Info':'TriangleAlert'} size=${18}/></span><div>${children}</div></div>`}
+
+function Hero({tickets,closed}){
+  return html`<header className="hero">
+    <div className="checker"></div>
+    <div className="max-w-[1040px] mx-auto px-4 pt-5 pb-6 sm:pt-8 sm:pb-9 grid gap-5 sm:grid-cols-[1.15fr_1fr] sm:items-center">
+      <div>
+        <div className="inline-flex items-center gap-2 nb-sm px-3 py-1 font-bold text-[14px]" style=${{background:'#111',color:'#FFD60A'}}><${Icon} name="Flag" size=${16}/> Foro Joven 2027</div>
+        <h1 className="font-display mt-3 leading-[1.05]" style=${{fontSize:'clamp(28px,7.6vw,50px)',textWrap:'balance'}}>¡Diseña el 2027 y gana entradas para los karts! 🏎️💨</h1>
+        <p className="mt-3 text-[17px] font-medium max-w-[60ch]">Envía tus ideas de viajes, talleres, excursiones o charlas para 2027. <b>1 propuesta = 1 ticket</b> para el sorteo de <b>9 entradas</b>. ¡Cuantas más ideas, más opciones!</p>
+        ${closed&&html`<p className="mt-3 inline-block nb-sm px-3 py-1 font-bold" style=${{background:'#FF2D55',color:'#fff'}}>El envío de propuestas está cerrado</p>`}
+      </div>
+      <div className="grid gap-4">
+        <div className="max-w-[380px] w-full mx-auto sm:mx-0"><${KartArt}/></div>
+        <${TicketCounter} n=${tickets}/>
+      </div>
+    </div>
+  </header>`;
+}
+
+/* ---------- vista: enviar propuesta ---------- */
+function SendView({be,mine,estado,onSent,go,setToast}){
+  const [alias,setAlias]=useState(()=>LS.get('fj27-alias',''));
+  const [contacto,setContacto]=useState(()=>LS.get('fj27-contacto',''));
+  const [cat,setCat]=useState('');
+  const [titulo,setTitulo]=useState('');
+  const [detalle,setDetalle]=useState('');
+  const [busy,setBusy]=useState(false);
+  const [err,setErr]=useState('');
+  const [touched,setTouched]=useState(false);
+  const titleRef=useRef(null);
+  useEffect(()=>{if(mine){if(!alias&&mine.alias)setAlias(mine.alias);if(!contacto&&mine.contacto)setContacto(mine.contacto)}},[mine&&mine.alias]);
+  useEffect(()=>{LS.set('fj27-alias',alias)},[alias]);useEffect(()=>{LS.set('fj27-contacto',contacto)},[contacto]);
+  const ideas=(mine&&mine.ideas)||[];
+  const closed=!!estado.cerrado;
+  const blocked=be.mode==='off'||!be.canWrite;
+  const problems={
+    cat:!cat&&'Elige una categoría',
+    alias:alias.trim().length<2&&'Escribe tu nombre o alias',
+    contacto:contacto.trim().length<4&&'Déjanos cómo avisarte (Instagram, WhatsApp o email)',
+    titulo:titulo.trim().length<4&&'Ponle un título a tu idea (mín. 4 letras)'
+  };
+  const dup=ideas.some(i=>i.titulo.trim().toLowerCase()===titulo.trim().toLowerCase());
+  const full=ideas.length>=MAX_IDEAS;
+  const valid=!Object.values(problems).some(Boolean)&&!dup&&!full;
+
+  const submit=async e=>{e.preventDefault();setTouched(true);setErr('');
+    if(!valid||busy||closed||blocked) return;
+    setBusy(true);
+    try{const r=await be.addIdea({alias:alias.trim(),contacto:contacto.trim(),cat,titulo:titulo.trim(),detalle:detalle.trim()});onSent(r.mine,r.idea);setTouched(false)}
+    catch(ex){setErr(errMsg(ex))}
+    setBusy(false)};
+  const another=()=>{setTitulo('');setDetalle('');setTouched(false);setTimeout(()=>{titleRef.current&&titleRef.current.focus();titleRef.current&&titleRef.current.scrollIntoView({block:'center',behavior:reduced()?'auto':'smooth'})},60)};
+  SendView.another=another;
+
+  const show=k=>touched&&problems[k];
+  return html`<form onSubmit=${submit} noValidate className="grid gap-6">
+    ${be.mode==='off'&&html`<${Banner} tone="err">No hay conexión con el servidor. Recarga la página en unos segundos.<//>`}
+    ${closed&&html`<${Banner} tone="warn">El plazo para enviar propuestas ha terminado. Mira la pestaña <button type="button" className="underline font-bold" onClick=${()=>go('ganadores')}>Ganadores</button>.<//>`}
+
+    <section>
+      <h2 className="font-display text-[22px] leading-tight mb-1">1 · ¿De qué va tu idea?</h2>
+      <p className="muted text-[15px] mb-3">Toca una categoría.</p>
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3" role="radiogroup" aria-label="Categoría">
+        ${CATS.map(c=>html`<button type="button" key=${c.id} role="radio" aria-checked=${cat===c.id} className="tile" style=${{background:c.color}} onClick=${()=>setCat(c.id)}>
+          <span className="ic"><${Icon} name=${c.icon} size=${22}/></span>
+          <span className="font-extrabold leading-tight text-[16px]">${c.emoji} ${c.label}</span>
+          <span className="check"><${Icon} name="Check" size=${16} stroke=${3.5}/></span>
+        </button>`)}
+      </div>
+      ${show('cat')&&html`<p className="mt-2 font-bold" style=${{color:'var(--red)'}}>${problems.cat}</p>`}
+    </section>
+
+    <section className="nb p-4 sm:p-5 grid gap-4">
+      <h2 className="font-display text-[22px] leading-tight">2 · Cuéntanos</h2>
+      <div className="grid gap-4 sm:grid-cols-2">
+        <div><label className="lbl" htmlFor="alias"><${Icon} name="User" size=${17}/>Tu nombre / alias</label>
+          <input id="alias" className="inp" value=${alias} onInput=${e=>setAlias(e.target.value)} maxLength="30" autoComplete="nickname" placeholder="Ej. Lucía_skate"/>
+          ${show('alias')&&html`<p className="mt-1 text-[14px] font-bold" style=${{color:'var(--red)'}}>${problems.alias}</p>`}</div>
+        <div><label className="lbl" htmlFor="contacto"><${Icon} name="AtSign" size=${17}/>Tu contacto</label>
+          <input id="contacto" className="inp" value=${contacto} onInput=${e=>setContacto(e.target.value)} maxLength="80" placeholder="@instagram, WhatsApp o email"/>
+          ${show('contacto')&&html`<p className="mt-1 text-[14px] font-bold" style=${{color:'var(--red)'}}>${problems.contacto}</p>`}</div>
+      </div>
+      <p className="muted text-[13px] -mt-2 flex gap-1.5 items-center"><${Icon} name="Lock" size=${14}/>Tu contacto solo lo ve la organización, para avisarte si ganas.</p>
+      <div><label className="lbl" htmlFor="titulo"><${Icon} name="Lightbulb" size=${17}/>Título de tu idea</label>
+        <input id="titulo" ref=${titleRef} className="inp" value=${titulo} onInput=${e=>setTitulo(e.target.value)} maxLength="90" placeholder=${cat?CAT[cat].ej:'Ej. Viaje de fin de semana a PortAventura'}/>
+        ${show('titulo')&&html`<p className="mt-1 text-[14px] font-bold" style=${{color:'var(--red)'}}>${problems.titulo}</p>`}
+        ${dup&&titulo.trim()&&html`<p className="mt-1 text-[14px] font-bold" style=${{color:'var(--red)'}}>Ya enviaste esta idea. ¡Prueba con otra diferente!</p>`}</div>
+      <div><label className="lbl" htmlFor="detalle"><${Icon} name="AlignLeft" size=${17}/>Detalles <span className="muted font-medium">(opcional)</span></label>
+        <textarea id="detalle" className="inp" rows="3" value=${detalle} onInput=${e=>setDetalle(e.target.value)} maxLength="400" placeholder="¿Cuándo, dónde, para quién? Cualquier detalle ayuda."></textarea>
+        <div className="text-right muted text-[13px] mt-1">${detalle.length}/400</div></div>
+      ${full&&html`<${Banner} tone="warn">Has llegado al máximo de ${MAX_IDEAS} ideas. ¡Gracias por tanta imaginación!<//>`}
+      ${err&&html`<${Banner} tone="err">${err}<//>`}
+      <button type="submit" className="btn btn-red btn-xl font-display text-[17px]" disabled=${busy||closed||blocked}>
+        ${busy?'Enviando…':'¡ENVIAR IDEA Y SUMAR +1 TICKET! 🎟️'}</button>
+    </section>
+
+    <section className="grid grid-cols-3 gap-2 text-center">
+      ${[['Send','Envía ideas'],['Ticket','Suma tickets'],['Trophy','9 ganadores']].map(([i,t],k)=>html`<div key=${k} className="nb-sm p-3 soft"><div className="grid place-items-center"><${Icon} name=${i} size=${24}/></div><div className="font-bold text-[14px] mt-1">${t}</div></div>`)}
+    </section>
+    <p className="muted text-[14px] text-center -mt-3">Los ganadores se eligen por sorteo entre todos los tickets y, además, la organización puede premiar las mejores propuestas.</p>
+  </form>`;
+}
+
+/* ---------- modal de éxito ---------- */
+function SuccessModal({data,onAnother,onClose}){
+  const btn=useRef(null);
+  useEffect(()=>{btn.current&&btn.current.focus();const k=e=>{if(e.key==='Escape')onClose()};addEventListener('keydown',k);return()=>removeEventListener('keydown',k)},[]);
+  const c=CAT[data.idea.cat];
+  return html`<div className="overlay" role="dialog" aria-modal="true" aria-labelledby="okt" onClick=${e=>{if(e.target===e.currentTarget)onClose()}}>
+    <div className="nb pop w-full max-w-[420px] p-5 text-center relative" style=${{background:'#FFD60A',color:'#111',borderColor:'#111',boxShadow:'6px 6px 0 #111'}}>
+      <button className="absolute top-3 right-3 w-11 h-11 grid place-items-center rounded-xl" style=${{border:'2.5px solid #111',background:'#fff'}} onClick=${onClose} aria-label="Cerrar"><${Icon} name="X" size=${20}/></button>
+      <div className="text-5xl mt-2" aria-hidden="true">🎉</div>
+      <h2 id="okt" className="font-display text-[30px] leading-tight mt-2">¡+1 TICKET!</h2>
+      <p className="font-medium mt-1">Tu idea ya está en boxes:</p>
+      <div className="mt-3 rounded-2xl p-3 text-left" style=${{background:'#fff',border:'3px solid #111'}}>
+        <${CatBadge} id=${data.idea.cat} small/>
+        <div className="font-extrabold text-[17px] mt-1.5">${data.idea.titulo}</div>
+      </div>
+      <div className="mt-4 flex items-center justify-center gap-3">
+        <span className="font-bold">Llevas</span>
+        <span className="font-display text-[44px] leading-none bump" style=${{color:'#FF2D55',WebkitTextStroke:'2px #111'}}>${data.total}</span>
+        <span className="font-bold text-left leading-tight">ticket${data.total===1?'':'s'}<br/>para los karts</span>
+      </div>
+      <button ref=${btn} className="btn btn-red btn-xl mt-5 font-display text-[16px]" style=${{borderColor:'#111',boxShadow:'4px 4px 0 #111'}} onClick=${onAnother}>¡Tengo otra idea! (+1 ticket)</button>
+      <button className="btn btn-ghost w-full mt-3" style=${{background:'#fff',color:'#111',borderColor:'#111',boxShadow:'4px 4px 0 #111'}} onClick=${onClose}>Ya está, gracias</button>
+      <p className="text-[13px] mt-3 font-medium">Tu nombre y contacto se quedan guardados.</p>
+    </div></div>`;
+}
+
+/* ---------- vista: mis ideas ---------- */
+function MineView({mine,go}){
+  const ideas=((mine&&mine.ideas)||[]).slice().reverse();
+  if(!ideas.length) return html`<div className="nb p-6 text-center grid gap-3 place-items-center">
+    <div className="w-16 h-16 rounded-2xl grid place-items-center" style=${{background:'#FFD60A',color:'#111',border:'3px solid var(--line)'}}><${Icon} name="Lightbulb" size=${34}/></div>
+    <h2 className="font-display text-[22px]">Aún no tienes tickets</h2>
+    <p className="muted max-w-[36ch]">Cada idea que envíes suma un ticket. ¿Cuál es la primera?</p>
+    <button className="btn btn-red" onClick=${()=>go('enviar')}><${Icon} name="Plus"/>Enviar mi primera idea</button></div>`;
+  return html`<div className="grid gap-4">
+    <div className="flex items-end justify-between gap-3 flex-wrap">
+      <div><h2 className="font-display text-[24px] leading-tight">Mis ideas</h2><p className="muted">A nombre de <b style=${{color:'var(--ink)'}}>${mine.alias}</b> · ${mine.contacto}</p></div>
+      <button className="btn" onClick=${()=>go('enviar')}><${Icon} name="Plus"/>Otra idea</button>
+    </div>
+    <ol className="grid gap-3">
+      ${ideas.map((i,k)=>html`<li key=${i.id} className="nb p-4 flex gap-3 items-start">
+        <div className="font-display text-[15px] shrink-0 w-12 h-12 grid place-items-center rounded-xl" style=${{background:'#111',color:'#FFD60A',border:'2.5px solid var(--line)'}}>#${ideas.length-k}</div>
+        <div className="flex-1"><${CatBadge} id=${i.cat} small/><div className="font-extrabold text-[17px] mt-1 leading-snug">${i.titulo}</div>
+          ${i.detalle&&html`<p className="muted text-[15px] mt-1">${i.detalle}</p>`}
+          <div className="muted text-[13px] mt-1">${fmt(i.ts)} · 🎟️ 1 ticket</div></div>
+      </li>`)}
+    </ol></div>`;
+}
+
+/* ---------- vista: ganadores ---------- */
+function WinnersView({estado,be,mine,go}){
+  const pub=estado.publicado&&(estado.ganadores||[]).length;
+  const n=((mine&&mine.ideas)||[]).length;
+  if(!pub) return html`<div className="nb p-6 text-center grid gap-3">
+    <${TrophyArt}/>
+    <h2 className="font-display text-[24px] leading-tight">Parrilla de salida… vacía (de momento)</h2>
+    <p className="muted max-w-[44ch] mx-auto">La organización publicará aquí a las 9 personas ganadoras de las entradas para los karts cuando cierre el foro.</p>
+    <p className="font-bold">Ahora mismo tienes ${n} ticket${n===1?'':'s'}.</p>
+    ${!estado.cerrado&&html`<div><button className="btn btn-red" onClick=${()=>go('enviar')}><${Icon} name="Plus"/>Sumar más tickets</button></div>`}
+  </div>`;
+  const g=estado.ganadores||[],sup=estado.suplentes||[];
+  const me=be.uid&&g.find(w=>w.uid===be.uid);const meSup=be.uid&&sup.find(w=>w.uid===be.uid);
+  return html`<div className="grid gap-5">
+    ${me&&html`<div className="nb p-5 text-center pop" style=${{background:'#FF2D55',color:'#fff'}}><div className="text-4xl">🏁</div><h2 className="font-display text-[26px] leading-tight mt-1">¡Has ganado una entrada!</h2><p className="font-medium mt-1">La organización te escribirá a tu contacto. ¡Nos vemos en la pista!</p></div>`}
+    ${meSup&&!me&&html`<${Banner} tone="ok"><b>Estás en la lista de suplentes.</b> Si alguna persona ganadora no puede ir, te avisamos.<//>`}
+    <div><h2 className="font-display text-[26px] leading-tight">Los 9 pilotos del Foro Joven 🏆</h2>
+    <p className="muted">Publicado el ${fmt(estado.publicadoEn)}. La organización contactará con cada ganador.</p></div>
+    <ol className="grid gap-3 sm:grid-cols-2">
+      ${g.map((w,k)=>html`<li key=${w.uid+k} className="nb p-4 flex gap-3 items-center view-in" style=${{animationDelay:(k*60)+'ms',animationFillMode:'both'}}>
+        <div className="font-display text-[24px] w-14 h-14 shrink-0 grid place-items-center rounded-2xl" style=${{background:k<3?'#FFD60A':'var(--soft)',color:k<3?'#111':'var(--ink)',border:'3px solid var(--line)'}}>${k+1}</div>
+        <div className="flex-1"><div className="font-extrabold text-[18px] leading-tight">${w.alias}</div>
+          <div className="muted text-[14px] clamp2">${w.titulo}</div>
+          <span className="inline-block mt-1 text-[12px] font-bold px-2 py-0.5 rounded-full" style=${{border:'2px solid var(--line)'}}>${w.modo==='propuesta'?'⭐ Mejor propuesta':'🎲 Sorteo'}</span></div>
+      </li>`)}
+    </ol>
+    ${sup.length>0&&html`<div className="nb-sm p-4 soft"><h3 className="font-extrabold mb-1">Suplentes</h3><ol className="list-decimal pl-5">${sup.map((w,k)=>html`<li key=${k}>${w.alias}</li>`)}</ol></div>`}
+  </div>`;
+}
+
+/* ---------- panel de organización ---------- */
+function AdminGate({be,onOk}){
+  const [pin,setPin]=useState('');const [msg,setMsg]=useState('');const [busy,setBusy]=useState(false);
+  const submit=async e=>{e.preventDefault();if(!pin.trim()||busy)return;setBusy(true);setMsg('');
+    const r=await be.login(pin.trim());setBusy(false);
+    if(r===true)onOk();else setMsg(r===false?'PIN incorrecto':errMsg(r))};
+  return html`<form className="nb p-5 max-w-[420px] mx-auto grid gap-3" onSubmit=${submit}>
+    <div className="flex items-center gap-2"><${Icon} name="ShieldCheck"/><h2 className="font-display text-[20px]">Acceso organización</h2></div>
+    <p className="muted text-[15px]">Introduce el PIN de la organización para ver participantes, hacer el sorteo y publicar ganadores.</p>
+    <input className="inp" type="password" inputMode="numeric" autoComplete="current-password" value=${pin} onInput=${e=>{setPin(e.target.value);setMsg('')}} placeholder="PIN" aria-label="PIN"/>
+    ${msg&&html`<p className="font-bold" style=${{color:'var(--red)'}}>${msg}</p>`}
+    <button className="btn btn-ink" disabled=${busy}>${busy?'Comprobando…':'Entrar'}</button></form>`;
+}
+
+function QrCard(){
+  const [open,setOpen]=useState(false);const url=location.origin+'/';
+  let svg='';try{const q=qrcode(0,'M');q.addData(url);q.make();svg=q.createSvgTag({cellSize:8,margin:2,scalable:true})}catch(e){}
+  return html`<div className="nb p-4 grid gap-3">
+    <div className="flex items-center justify-between gap-2 flex-wrap"><div><h3 className="font-extrabold flex items-center gap-2"><${Icon} name="QrCode" size=${20}/>Código QR para el evento</h3><p className="muted text-[14px] break-all">${url}</p></div>
+    <button className="btn btn-ghost" onClick=${()=>setOpen(!open)}>${open?'Ocultar QR':'Mostrar QR'}</button></div>
+    ${open&&svg&&html`<div className="grid gap-2 place-items-center"><div className="w-[min(78vw,320px)] bg-white p-2 rounded-xl" style=${{border:'3px solid #111'}} dangerouslySetInnerHTML=${{__html:svg}}></div><p className="muted text-[13px] text-center">Haz una captura de pantalla para imprimirlo o proyectarlo.</p></div>`}
+    ${open&&!svg&&html`<p className="muted">No se ha podido generar el QR. Usa cualquier generador con la dirección de arriba.</p>`}
+  </div>`;
+}
+
+function Admin({be,estado,setToast,onLogout}){
+  const [users,setUsers]=useState(null);
+  const [bor,setBor]=useState({sel:[],sup:[]});
+  const [sec,setSec]=useState('ganadores');
+  const [q,setQ]=useState('');const [fcat,setFcat]=useState('');const [sort,setSort]=useState('tickets');
+  const [nsup,setNsup]=useState(2);
+  const [rolling,setRolling]=useState(null);
+  const [confirm,setConfirm]=useState(null);
+  const [copyText,setCopyText]=useState('');
+  const [slow,setSlow]=useState(false);
+  const queue=useRef(Promise.resolve());
+  const lastLocal=useRef(0);const rollingRef=useRef(false);
+
+  useEffect(()=>{
+    const t=setTimeout(()=>setSlow(true),10000);
+    const stop=be.watchAdmin(d=>{clearTimeout(t);setSlow(false);setUsers(d.users||[]);
+      if(Date.now()-lastLocal.current>6000&&!rollingRef.current){const b=d.borrador||{};setBor({sel:b.sel||[],sup:b.sup||[]})}},
+      e=>{clearTimeout(t);if(e.code==='pin'){be.logout();setToast(errMsg(e));onLogout()}});
+    return()=>{clearTimeout(t);stop()};
+  },[be]);
+  useEffect(()=>{rollingRef.current=!!rolling},[rolling]);
+
+  const list=users||[];
+  const valid=list.map(u=>({...u,ideas:(u.ideas||[]).filter(i=>i&&i.titulo)})).filter(u=>u.ideas.length);
+  const totalT=valid.reduce((a,u)=>a+u.ideas.length,0);
+  const byCat=CATS.map(c=>({...c,n:valid.reduce((a,u)=>a+u.ideas.filter(i=>i.cat===c.id).length,0)}));
+  const maxCat=Math.max(1,...byCat.map(c=>c.n));
+  const contactOf=uid=>{const u=list.find(x=>x.uid===uid);return u?u.contacto:'—'};
+
+  const saveB=next=>{lastLocal.current=Date.now();setBor(next);queue.current=queue.current.then(()=>be.saveBorrador({sel:next.sel,sup:next.sup})).catch(e=>setToast(errMsg(e)))};
+  const inSel=uid=>bor.sel.some(w=>w.uid===uid)||bor.sup.some(w=>w.uid===uid);
+  const pick=(u,i)=>{
+    const existing=bor.sel.find(w=>w.uid===u.uid);
+    if(existing&&existing.ideaId===i.id){saveB({...bor,sel:bor.sel.filter(w=>w.uid!==u.uid)});return}
+    const others=bor.sel.filter(w=>w.uid!==u.uid);
+    if(others.length>=TOTAL){setToast('Ya hay 9 ganadores. Quita uno antes de elegir otra propuesta.');return}
+    const w={uid:u.uid,alias:u.alias,titulo:i.titulo,cat:i.cat,ideaId:i.id,modo:'propuesta'};
+    const manual=others.filter(x=>x.modo==='propuesta');const rest=others.filter(x=>x.modo!=='propuesta');
+    saveB({...bor,sel:[...manual,w,...rest],sup:bor.sup.filter(x=>x.uid!==u.uid)});
+  };
+  const removeSel=uid=>saveB({...bor,sel:bor.sel.filter(w=>w.uid!==uid)});
+  const need=TOTAL-bor.sel.length;
+  const pool=valid.filter(u=>!inSel(u.uid));
+  const poolT=pool.reduce((a,u)=>a+u.ideas.length,0);
+
+  const draw=async()=>{
+    if(rolling) return;lastLocal.current=Date.now()+60000;
+    let tickets=[];pool.forEach(u=>u.ideas.forEach(i=>tickets.push({u,i})));
+    const nWin=Math.min(need,pool.length);const total=nWin+Math.min(nsup,Math.max(0,pool.length-nWin));
+    if(!total){setToast('No quedan participantes para sortear.');return}
+    const picks=[];
+    for(let k=0;k<total&&tickets.length;k++){const t=tickets[rnd(tickets.length)];picks.push(t);tickets=tickets.filter(x=>x.u.uid!==t.u.uid)}
+    const names=valid.map(u=>u.alias);
+    let sel=[...bor.sel],sup=[...bor.sup];
+    for(let k=0;k<picks.length;k++){
+      const p=picks[k];const isSup=k>=nWin;
+      if(!reduced()){const end=Date.now()+(k===0?1500:900);while(Date.now()<end){setRolling({name:names[rnd(names.length)],label:isSup?'Suplente '+(k-nWin+1):'Plaza '+(sel.length+1)});await sleep(70)}}
+      setRolling({name:p.u.alias,label:isSup?'Suplente '+(k-nWin+1):'Plaza '+(sel.length+1),done:true});
+      const w={uid:p.u.uid,alias:p.u.alias,titulo:p.i.titulo,cat:p.i.cat,ideaId:p.i.id,modo:'sorteo',tickets:p.u.ideas.length};
+      if(isSup) sup=[...sup,w];else sel=[...sel,w];
+      setBor({sel,sup});await sleep(reduced()?0:650);
+    }
+    setRolling(null);lastLocal.current=Date.now();saveB({sel,sup});setToast('¡Sorteo hecho! Revisa la lista y publícala cuando quieras.');
+  };
+  const clearRandom=()=>saveB({sel:bor.sel.filter(w=>w.modo==='propuesta'),sup:[]});
+  const resetAll=()=>{saveB({sel:[],sup:[]});setConfirm(null)};
+  const publish=async()=>{
+    try{await be.saveEstado({...estado,publicado:true,ganadores:bor.sel.map(({uid,alias,titulo,cat,modo})=>({uid,alias,titulo,cat,modo})),suplentes:bor.sup.map(({uid,alias})=>({uid,alias})),publicadoEn:Date.now()});setToast('Ganadores publicados en la pestaña Ganadores.')}
+    catch(e){setToast(errMsg(e))}setConfirm(null)};
+  const unpublish=async()=>{try{await be.saveEstado({...estado,publicado:false});setToast('Publicación retirada.')}catch(e){setToast(errMsg(e))}};
+  const toggleClosed=async()=>{try{await be.saveEstado({...estado,cerrado:!estado.cerrado});setToast(estado.cerrado?'Envíos abiertos de nuevo.':'Envíos cerrados.')}catch(e){setToast(errMsg(e))}};
+  const delIdea=async(u,i)=>{
+    try{await be.deleteIdea(u.uid,i.id);setUsers(l=>(l||[]).map(x=>x.uid===u.uid?{...x,ideas:(x.ideas||[]).filter(y=>y.id!==i.id)}:x))}catch(e){setToast(errMsg(e))}
+    if(bor.sel.some(w=>w.ideaId===i.id)) saveB({...bor,sel:bor.sel.filter(w=>w.ideaId!==i.id)});setConfirm(null)};
+  const doCopy=async txt=>{try{await navigator.clipboard.writeText(txt);setToast('Copiado al portapapeles.')}catch(e){setCopyText(txt)}};
+  const winnersTxt=()=>['GANADORES FORO JOVEN 2027 · Entradas karts',...bor.sel.map((w,k)=>`${k+1}. ${w.alias} — ${contactOf(w.uid)} — "${w.titulo}" (${w.modo==='propuesta'?'mejor propuesta':'sorteo'})`),...(bor.sup.length?['','SUPLENTES',...bor.sup.map((w,k)=>`${k+1}. ${w.alias} — ${contactOf(w.uid)}`)]:[])].join('\n');
+  const csv=()=>{const esc=s=>'"'+String(s==null?'':s).replace(/"/g,'""')+'"';
+    return ['alias;contacto;tickets;categoria;titulo;detalle;fecha',...valid.flatMap(u=>u.ideas.map(i=>[u.alias,u.contacto,u.ideas.length,(CAT[i.cat]||{}).label,i.titulo,i.detalle,new Date(i.ts).toISOString()].map(esc).join(';')))].join('\n')};
+
+  const pubSame=estado.publicado&&JSON.stringify((estado.ganadores||[]).map(w=>w.uid+w.titulo))===JSON.stringify(bor.sel.map(w=>w.uid+w.titulo));
+
+  let shown=valid.filter(u=>!q||(u.alias+' '+u.contacto+' '+u.ideas.map(i=>i.titulo).join(' ')).toLowerCase().includes(q.toLowerCase()));
+  if(fcat) shown=shown.filter(u=>u.ideas.some(i=>i.cat===fcat));
+  shown=shown.slice().sort((a,b)=>sort==='tickets'?b.ideas.length-a.ideas.length:(b.actualizado||0)-(a.actualizado||0));
+
+  return html`<div className="grid gap-5">
+    <div className="flex items-center justify-between gap-3 flex-wrap">
+      <div><h2 className="font-display text-[26px] leading-tight">Panel de organización</h2>
+      <p className="muted">Se actualiza solo cada pocos segundos</p></div>
+      <div className="flex gap-2 flex-wrap"><button className="btn btn-ghost" onClick=${()=>{be.logout();onLogout()}}><${Icon} name="LogOut" size=${18}/>Salir</button><button className="btn ${estado.cerrado?'btn-blue':'btn-ghost'}" onClick=${toggleClosed}><${Icon} name=${estado.cerrado?'Unlock':'Lock'} size=${18}/>${estado.cerrado?'Reabrir envíos':'Cerrar envíos'}</button></div>
+    </div>
+    <${QrCard}/>
+    ${slow&&!users&&html`<${Banner} tone="warn">Los datos tardan en llegar. Comprueba la conexión; se cargarán solos.<//>`}
+
+    <div className="grid grid-cols-3 gap-3">
+      ${[['Users','Participantes',valid.length],['Ticket','Tickets / ideas',totalT],['Trophy','Ganadores',bor.sel.length+'/9']].map(([i,l,v])=>html`<div key=${l} className="nb p-3 sm:p-4"><div className="flex items-center gap-1.5 muted text-[13px] font-bold"><${Icon} name=${i} size=${16}/>${l}</div><div className="font-display text-[26px] sm:text-[34px] leading-tight mt-1">${v}</div></div>`)}
+    </div>
+
+    <div className="nb p-4 grid gap-2">
+      <h3 className="font-extrabold">Ideas por categoría</h3>
+      ${byCat.map(c=>html`<div key=${c.id} className="grid grid-cols-[minmax(0,9.5em)_1fr_2.5em] items-center gap-2 text-[14px]">
+        <span className="font-bold truncate">${c.emoji} ${c.label}</span><div className="bar"><i style=${{width:(c.n/maxCat*100)+'%',background:c.color}}></i></div><span className="text-right font-bold">${c.n}</span></div>`)}
+    </div>
+
+    <div className="flex gap-2 nb-sm p-1.5 soft" role="tablist">
+      ${[['ganadores','Trophy','Selección y sorteo'],['participantes','Users','Participantes']].map(([id,ic,l])=>html`<button key=${id} role="tab" aria-selected=${sec===id} className="flex-1 btn ${sec===id?'btn-ink':'btn-ghost'}" style=${{boxShadow:'none',minHeight:'46px'}} onClick=${()=>setSec(id)}><${Icon} name=${ic} size=${18}/>${l}</button>`)}
+    </div>
+
+    ${sec==='ganadores'&&html`<div className="grid gap-4 view-in">
+      <div className="nb p-4 grid gap-3">
+        <div className="flex items-center justify-between gap-2 flex-wrap"><h3 className="font-display text-[20px]">Parrilla de ganadores</h3>
+          <span className="font-bold text-[14px] px-2.5 py-1 rounded-full" style=${{border:'2.5px solid var(--line)',background:pubSame?'#C8F7DA':estado.publicado?'#FFE58A':'var(--soft)',color:pubSame||estado.publicado?'#111':'var(--ink)'}}>${pubSame?'✅ Publicado':estado.publicado?'⚠️ Cambios sin publicar':'Borrador'}</span></div>
+        <p className="muted text-[14px]">Elige a dedo las mejores propuestas desde <b>Participantes</b> (⭐) y sortea el resto. Cada persona puede ganar una sola entrada.</p>
+        <ol className="grid gap-2 sm:grid-cols-3">
+          ${Array.from({length:TOTAL},(_,k)=>{const w=bor.sel[k];
+            return w?html`<li key=${k} className="nb-sm p-3 flex gap-2 items-start view-in" style=${{background:w.modo==='propuesta'?'#FFE58A':'#CFE0FF',color:'#111'}}>
+              <span className="font-display text-[18px] w-8 shrink-0">${k+1}</span>
+              <div className="flex-1"><div className="font-extrabold leading-tight">${w.alias}</div><div className="text-[13px] clamp2">${w.titulo}</div>
+              <div className="text-[12px] font-bold mt-0.5">${w.modo==='propuesta'?'⭐ Propuesta':'🎲 Sorteo'} · ${contactOf(w.uid)}</div></div>
+              <button className="w-10 h-10 grid place-items-center rounded-lg shrink-0" style=${{border:'2px solid #111',background:'#fff'}} onClick=${()=>removeSel(w.uid)} aria-label=${'Quitar a '+w.alias}><${Icon} name="X" size=${16}/></button></li>`
+            :html`<li key=${k} className="slot-empty p-3 min-h-[74px] flex items-center gap-2 muted font-bold"><span className="font-display text-[18px] w-8">${k+1}</span>Plaza libre</li>`})}
+        </ol>
+        ${rolling&&html`<div className="nb p-4 text-center" style=${{background:'#111',color:'#FFD60A'}} aria-live="assertive">
+          <div className="text-[13px] font-bold" style=${{color:'#fff'}}>${rolling.label}</div>
+          <div className=${'font-display text-[30px] leading-tight '+(rolling.done?'pop':'roll')}>${rolling.name}</div></div>`}
+        <div className="grid gap-3 sm:grid-cols-[1fr_auto] items-end">
+          <div><div className="lbl">Suplentes por si alguien falla</div>
+            <div className="flex gap-2 flex-wrap">${[0,1,2,3].map(n=>html`<button key=${n} className="chip" aria-pressed=${nsup===n} onClick=${()=>setNsup(n)}>${n}</button>`)}</div></div>
+          <button className="btn btn-blue w-full sm:w-auto" style=${{minHeight:'58px'}} disabled=${!!rolling||need<=0||!pool.length} onClick=${draw}><${Icon} name="Shuffle"/>${need>0?`Sortear ${need} plaza${need===1?'':'s'}`:'Parrilla completa'}</button>
+        </div>
+        <p className="muted text-[13px]">En el bombo: ${pool.length} personas con ${poolT} tickets. Cada ticket es una idea; quien más ideas envió, más opciones tiene.</p>
+        ${bor.sup.length>0&&html`<div className="nb-sm p-3 soft"><b>Suplentes:</b> ${bor.sup.map((w,k)=>html`<span key=${k} className="nowrap">${k?' · ':' '}${k+1}. ${w.alias} (${contactOf(w.uid)})</span>`)}</div>`}
+        <div className="flex gap-2 flex-wrap">
+          <button className="btn btn-red" disabled=${!bor.sel.length||!!rolling} onClick=${()=>setConfirm({t:'pub'})}><${Icon} name="Megaphone" size=${18}/>${estado.publicado?'Actualizar publicación':'Publicar ganadores'}</button>
+          ${estado.publicado&&html`<button className="btn btn-ghost" onClick=${unpublish}><${Icon} name="EyeOff" size=${18}/>Retirar publicación</button>`}
+          <button className="btn btn-ghost" disabled=${!bor.sel.length} onClick=${()=>doCopy(winnersTxt())}><${Icon} name="Copy" size=${18}/>Copiar con contactos</button>
+          <button className="btn btn-ghost" disabled=${!bor.sel.some(w=>w.modo==='sorteo')&&!bor.sup.length||!!rolling} onClick=${clearRandom}><${Icon} name="RotateCcw" size=${18}/>Repetir sorteo</button>
+          <button className="btn btn-ghost" disabled=${!bor.sel.length&&!bor.sup.length||!!rolling} onClick=${()=>setConfirm({t:'reset'})}><${Icon} name="Trash2" size=${18}/>Vaciar todo</button>
+        </div>
+        ${confirm&&confirm.t==='pub'&&html`<${Banner} tone="warn">Se publicarán alias e idea de ${bor.sel.length} ganador${bor.sel.length===1?'':'es'}${bor.sel.length<TOTAL?` (faltan ${TOTAL-bor.sel.length} plazas)`:''}. Los contactos nunca se publican.
+          <div className="flex gap-2 mt-2"><button className="btn btn-red" onClick=${publish}>Sí, publicar</button><button className="btn btn-ghost" onClick=${()=>setConfirm(null)}>Cancelar</button></div><//>`}
+        ${confirm&&confirm.t==='reset'&&html`<${Banner} tone="warn">¿Vaciar toda la parrilla (también las elegidas a dedo)?
+          <div className="flex gap-2 mt-2"><button className="btn btn-red" onClick=${resetAll}>Sí, vaciar</button><button className="btn btn-ghost" onClick=${()=>setConfirm(null)}>Cancelar</button></div><//>`}
+      </div>
+    </div>`}
+
+    ${sec==='participantes'&&html`<div className="grid gap-3 view-in">
+      <div className="grid gap-2 sm:grid-cols-[1fr_auto]">
+        <label className="relative block"><span className="absolute left-3 top-1/2 -translate-y-1/2 muted"><${Icon} name="Search" size=${19}/></span>
+          <input className="inp" style=${{paddingLeft:'2.6rem'}} value=${q} onInput=${e=>setQ(e.target.value)} placeholder="Buscar alias, contacto o idea" aria-label="Buscar"/></label>
+        <div className="flex gap-2"><button className="chip" aria-pressed=${sort==='tickets'} onClick=${()=>setSort('tickets')}>Más tickets</button><button className="chip" aria-pressed=${sort==='recent'} onClick=${()=>setSort('recent')}>Recientes</button></div>
+      </div>
+      <div className="flex gap-2 overflow-x-auto pb-1">
+        <button className="chip shrink-0" aria-pressed=${!fcat} onClick=${()=>setFcat('')}>Todas</button>
+        ${CATS.map(c=>html`<button key=${c.id} className="chip shrink-0" aria-pressed=${fcat===c.id} onClick=${()=>setFcat(fcat===c.id?'':c.id)}>${c.emoji} ${c.label}</button>`)}
+      </div>
+      <div className="flex gap-2 flex-wrap">
+        <button className="btn btn-ghost" disabled=${!valid.length} onClick=${()=>doCopy(csv())}><${Icon} name="Sheet" size=${18}/>Copiar todo (CSV)</button>
+      </div>
+      ${users===null&&html`<p className="muted">Cargando participantes…</p>`}
+      ${users&&!valid.length&&html`<div className="nb p-6 text-center muted">Todavía no ha llegado ninguna propuesta.</div>`}
+      ${shown.map(u=>{const won=bor.sel.find(w=>w.uid===u.uid);const sup=bor.sup.find(w=>w.uid===u.uid);
+        return html`<article key=${u.uid} className="nb p-4">
+          <header className="flex items-start justify-between gap-2 flex-wrap">
+            <div><div className="font-extrabold text-[18px] leading-tight">${u.alias} ${won&&html`<span className="text-[13px] px-2 py-0.5 rounded-full align-middle" style=${{background:'#FFD60A',color:'#111',border:'2px solid #111'}}>🏆 Ganador</span>`} ${sup&&html`<span className="text-[13px] px-2 py-0.5 rounded-full align-middle" style=${{border:'2px solid var(--line)'}}>Suplente</span>`}</div>
+              <div className="muted text-[14px] break-all">${u.contacto}</div></div>
+            <span className="font-display text-[15px] px-2.5 py-1 rounded-xl nowrap" style=${{background:'#111',color:'#FFD60A',border:'2px solid var(--line)'}}>🎟️ ${u.ideas.length}</span>
+          </header>
+          <ul className="grid gap-2 mt-3">
+            ${u.ideas.filter(i=>!fcat||i.cat===fcat).map(i=>{const chosen=won&&won.ideaId===i.id;
+              return html`<li key=${i.id} className="rounded-xl p-3 soft flex gap-2 items-start" style=${{border:chosen?'3px solid var(--line)':'2px solid transparent'}}>
+                <div className="flex-1"><${CatBadge} id=${i.cat} small/><div className="font-bold mt-1 leading-snug">${i.titulo}</div>
+                  ${i.detalle&&html`<p className="muted text-[14px] mt-0.5">${i.detalle}</p>`}<div className="muted text-[12px] mt-0.5">${fmt(i.ts)}</div>
+                  ${confirm&&confirm.t==='del'&&confirm.id===i.id&&html`<div className="flex gap-2 mt-2 items-center flex-wrap"><span className="font-bold text-[14px]">¿Borrar esta idea y su ticket?</span><button className="btn btn-red" style=${{minHeight:'40px'}} onClick=${()=>delIdea(u,i)}>Borrar</button><button className="btn btn-ghost" style=${{minHeight:'40px'}} onClick=${()=>setConfirm(null)}>No</button></div>`}</div>
+                <div className="flex flex-col gap-2 shrink-0">
+                  <button className="w-11 h-11 grid place-items-center rounded-xl" style=${{border:'2.5px solid var(--line)',background:chosen?'#FFD60A':'var(--card)',color:chosen?'#111':'var(--ink)'}} onClick=${()=>pick(u,i)} aria-pressed=${!!chosen} aria-label=${chosen?'Quitar de ganadores':'Elegir como mejor propuesta'} title=${chosen?'Quitar de ganadores':'Elegir como mejor propuesta'}><${Icon} name="Star" size=${20}/></button>
+                  <button className="w-11 h-11 grid place-items-center rounded-xl" style=${{border:'2.5px solid var(--line)',background:'var(--card)',color:'var(--ink)'}} onClick=${()=>setConfirm({t:'del',id:i.id})} aria-label="Borrar idea" title="Borrar idea (spam o repetida)"><${Icon} name="Trash2" size=${18}/></button>
+                </div></li>`})}
+          </ul></article>`})}
+    </div>`}
+
+    ${copyText&&html`<div className="overlay" role="dialog" aria-modal="true" aria-label="Texto para copiar"><div className="nb p-4 w-full max-w-[560px] grid gap-3">
+      <p className="font-bold">Tu navegador no deja copiar directamente. Selecciona el texto y cópialo:</p>
+      <textarea className="inp" rows="10" readOnly value=${copyText} onFocus=${e=>e.target.select()}></textarea>
+      <button className="btn btn-ink" onClick=${()=>setCopyText('')}>Cerrar</button></div></div>`}
+  </div>`;
+}
+
+/* ---------- app ---------- */
+const TABS=[['enviar','Send','Enviar'],['mis-ideas','Ticket','Mis ideas'],['ganadores','Trophy','Ganadores'],['organizacion','ShieldCheck','Organización']];
+const hashTab=()=>{const h=(location.hash||'').slice(1);return TABS.some(t=>t[0]===h)?h:'enviar'};
+
+function App(){
+  const [be,setBe]=useState(null);
+  const [tab,setTab]=useState(hashTab());
+  const [mine,setMine]=useState(null);
+  const [estado,setEstado]=useState({});
+  const [modal,setModal]=useState(null);
+  const [fire,setFire]=useState(0);
+  const [toast,setToast]=useState('');
+  const [adminOk,setAdminOk]=useState(false);
+  useEffect(()=>{if(be&&be.isAdmin)setAdminOk(true)},[be]);
+  const [slow,setSlow]=useState(false);
+
+  useEffect(()=>{initBackend().then(setBe)},[]);
+  useEffect(()=>{const f=()=>setTab(hashTab());addEventListener('hashchange',f);return()=>removeEventListener('hashchange',f)},[]);
+  useEffect(()=>{if(!be||be.mode==='off') return;
+    const t=setTimeout(()=>setSlow(true),10000);
+    const u1=be.watchMine(d=>{clearTimeout(t);setSlow(false);setMine(d)},()=>clearTimeout(t));
+    const u2=be.watchEstado(d=>setEstado(d||{}),()=>{});
+    return()=>{clearTimeout(t);u1&&u1();u2&&u2()}},[be]);
+  useEffect(()=>{if(!toast) return;const t=setTimeout(()=>setToast(''),3800);return()=>clearTimeout(t)},[toast]);
+
+  const go=id=>{if(location.hash.slice(1)!==id){try{location.hash=id}catch(e){}}setTab(id);scrollTo({top:0,behavior:reduced()?'auto':'smooth'})};
+  const onSent=(next,idea)=>{setMine(next);setModal({idea,total:next.ideas.length});setFire(f=>f+1)};
+  const tickets=((mine&&mine.ideas)||[]).length;
+  const tabs=TABS.filter(t=>t[0]!=='organizacion'||adminOk);
+  const cur=tab;
+
+  if(!be) return html`<div className="min-h-screen grid place-items-center"><div className="text-center"><div className="w-40 mx-auto"><${KartArt}/></div><p className="font-display mt-2">Arrancando motores…</p></div></div>`;
+
+  return html`<div className="min-h-screen pb-28">
+    <${Hero} tickets=${tickets} closed=${!!estado.cerrado}/>
+    <main className=${'mx-auto px-4 pt-6 '+(cur==='organizacion'?'max-w-[1040px]':'max-w-[720px]')}>
+      ${slow&&html`<div className="mb-4"><${Banner} tone="warn">La conexión va lenta: tus datos pueden tardar en aparecer.<//></div>`}
+      <div key=${cur} className="view-in">
+        ${cur==='enviar'&&html`<${SendView} be=${be} mine=${mine} estado=${estado} onSent=${onSent} go=${go} setToast=${setToast}/>`}
+        ${cur==='mis-ideas'&&html`<${MineView} mine=${mine} go=${go}/>`}
+        ${cur==='ganadores'&&html`<${WinnersView} estado=${estado} be=${be} mine=${mine} go=${go}/>`}
+        ${cur==='organizacion'&&(adminOk?html`<${Admin} be=${be} estado=${estado} setToast=${setToast} onLogout=${()=>{setAdminOk(false);go('enviar')}}/>`:html`<${AdminGate} be=${be} onOk=${()=>setAdminOk(true)}/>`)}
+      </div>
+      <footer className="mt-10 text-center muted text-[13px]">Foro Joven 2027 · Propuestas para el próximo año · Sorteo de 9 entradas para los karts</footer>
+    </main>
+    <nav className="nav" aria-label="Secciones"><div className="max-w-[720px] mx-auto flex gap-1.5">
+      ${tabs.map(([id,ic,l])=>html`<button key=${id} className="navb" aria-current=${cur===id?'page':undefined} onClick=${()=>go(id)}>
+        <span className="relative"><${Icon} name=${ic} size=${22}/>${id==='mis-ideas'&&tickets>0&&html`<span className="absolute -top-2 -right-3 text-[11px] font-extrabold rounded-full px-1.5" style=${{background:'#FF2D55',color:'#fff',border:'2px solid var(--line)'}}>${tickets}</span>`}</span>${l}</button>`)}
+    </div></nav>
+    ${modal&&html`<${SuccessModal} data=${modal} onClose=${()=>setModal(null)} onAnother=${()=>{setModal(null);if(cur!=='enviar')go('enviar');setTimeout(()=>SendView.another&&SendView.another(),30)}}/>`}
+    <${Confetti} fire=${fire}/>
+    ${toast&&html`<div className="fixed left-1/2 -translate-x-1/2 bottom-24 z-[70] w-[min(92vw,460px)] pop" role="status"><div className="nb-sm px-4 py-3 font-bold" style=${{background:'#111',color:'#FFD60A',borderColor:'#111'}}>${toast}</div></div>`}
+  </div>`;
+}
+
+try{ReactDOM.createRoot(document.getElementById('root')).render(h(App))}
+catch(e){document.getElementById('root').textContent='No se ha podido cargar la página. Recarga para volver a intentarlo.'}
+}
+</script>
+</body>
+</html>

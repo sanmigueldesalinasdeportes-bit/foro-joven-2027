@@ -1,0 +1,8 @@
+FORO JOVEN 2027 · Web para Netlify
+==================================
+public/index.html             -> la web (participantes + panel de organización)
+netlify/functions/api.mjs     -> el servidor: guarda propuestas, sorteo y ganadores (Netlify Blobs)
+netlify.toml / package.json   -> configuración para Netlify (no tocar)
+
+Antes de usarla: en Netlify, crea la variable de entorno ADMIN_PIN con el PIN del panel.
+Panel de organización: https://TU-WEB.netlify.app/#organizacion
